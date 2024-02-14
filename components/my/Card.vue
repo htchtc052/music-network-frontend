@@ -9,9 +9,9 @@ const props = defineProps<{
 
 <template>
   <div
-    :class="
+      :class="
       cn(
-        'rounded-xl border bg-card text-card-foreground shadow',
+        'px-12 rounded-xl bg-card text-card-foreground shadow border outline outline-1 outline-muted-foreground',
         props.class,
       )
     "
