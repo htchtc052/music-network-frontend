@@ -3,11 +3,11 @@
 </script>
 
 <template>
-  <div>Header</div>
-  <PartsHeader />
-<slot>
-
-</slot>
+  <PartsHeader/>
+  <main>
+      <slot></slot>
+  </main>
+  <PartsFooter/>
 </template>
 
 <style scoped>
