@@ -23,12 +23,12 @@ const onSubmit = handleSubmit(values => {
 <template>
   <section class="py-5">
     <div class="container mx-auto max-w-sm lg:max-w-md">
-      <myFormCard variant="outline">
-        <template #title>
-          Login form
-        </template>
-        <template #description>
-          Enter your credentials
+      <myCard variant="outline">
+        <template #header>
+          <div class="text-2xl self-center">Login form</div>
+          <div class="text-sm self-center text-muted-foreground">
+            Enter your credentials
+          </div>
         </template>
         <template #content>
           <form @submit="onSubmit">
@@ -57,7 +57,7 @@ const onSubmit = handleSubmit(values => {
             </div>
           </form>
         </template>
-      </myFormCard>
+      </myCard>
     </div>
   </section>
 </template>
