@@ -16,12 +16,12 @@ const props = withDefaults(defineProps<{
 
 
 const variants = cva(
-    'container px-4',
+    'px-12',
     {
       variants: {
         variant: {
-          default: 'px-12',
-          outline: 'px-12 rounded-xl shadow border outline outline-1 outline-muted-foreground',
+          default: '',
+          outline: 'rounded-xl shadow border outline outline-1 outline-muted-foreground',
         },
       },
       defaultVariants: {
